@@ -2,6 +2,7 @@
   "form": {
     "endpoint": "/",
     "formElement": false,
+    "formClassName": "form_jack__test",
     "fields": [
       {
         "type": "text",
@@ -24,7 +25,9 @@
         "name": "address",
         "id": "address",
         "placeholder": "Street Address",
-        "label": false,
+        "label": {
+          "text": "Street Address"
+        },
         "required": true
       },
       {
@@ -42,9 +45,16 @@
         "label": false,
         "required": true,
         "options": [
-          {"name": "AL", "default": true},
-          "AK",
-          "AZ"
+          {
+            "name": "AL",
+            "default": true
+          },
+          {
+            "name": "AK"
+          },
+          {
+            "name": "AZ"
+          }
         ]
       },
       {
@@ -57,7 +67,7 @@
         "required": true
       },
       {
-        "type": "phone",
+        "type": "tel",
         "name": "phone",
         "id": "phone",
         "placeholder": "(123) 456-7890",
