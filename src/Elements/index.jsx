@@ -14,7 +14,7 @@ const Input = props => {
 
     return (
 
-      <Label htmlFor={props.field.id || props.field.name}>
+      <Label htmlFor={props.field.id || props.field.name} text={props.label.text}>
 
         {theInput}
 
@@ -56,6 +56,8 @@ const textTypes = [
 const Label = props => (
 
   <label htmlFor={props.htmlFor}>
+
+    {props.text}
 
     {props.children}
 
